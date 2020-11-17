@@ -5,3 +5,4 @@ opencv-contrib-python==4.4.0.44
 pandas
 Pillow
 scikit-learn
+streamlit==0.69.2
