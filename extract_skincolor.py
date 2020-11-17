@@ -10,10 +10,6 @@ from matplotlib import pyplot as plt
 import streamlit as st
 from PIL import Image
 
-
-plt.switch_backend("TkAgg")
-
-
 st.write("""
 # Find Your Dominant Skincolor 
 
