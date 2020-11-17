@@ -1,8 +1,9 @@
 image==1.5.32
-matplotlib
+matplotlib==3.2.2
 numpy==1.18.5
 opencv-contrib-python==4.4.0.44
-pandas
-Pillow
-scikit-learn
+Pillow==7.2.0
+scikit-learn==0.23.1
 streamlit==0.69.2
+Counter==1.0.0
+pprintpp==0.4.0
