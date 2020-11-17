@@ -5,7 +5,6 @@ import numpy as np
 import cv2
 from sklearn.cluster import KMeans
 from collections import Counter
-import imutils
 import pprint
 from matplotlib import pyplot as plt
 import streamlit as st
