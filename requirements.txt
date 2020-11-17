@@ -1,0 +1,7 @@
+image==1.5.32
+matplotlib
+numpy==1.18.5
+opencv-contrib-python==4.4.0.44
+pandas
+Pillow
+scikit-learn
