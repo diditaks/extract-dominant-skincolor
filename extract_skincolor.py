@@ -181,7 +181,7 @@ def main():
     
 	if choice== 'About Me':
          st.subheader("Welcome")
-         imge = Image.open('/Users/adeltakawira/Desktop/makeup.png',)
+         imge = builtins.open(makeup.png, "rb")
 
          st.write("""Hello, my name is Adel Takawira and I am fifteen years old. I attend the international school of the hague, and for my personal project, I created a color detecting software. Coming up with this idea required a lot of brainstorming on my part. But after combining my love for skincare and technology, I came up with this idea.""")
          basewidth = 700
