@@ -181,7 +181,7 @@ def main():
     
 	if choice== 'About Me':
          st.subheader("Welcome")
-         imge = Image.open('makeup.png', "rb")
+         imge = Image.open('makeup.png')
 
          st.write("""Hello, my name is Adel Takawira and I am fifteen years old. I attend the international school of the hague, and for my personal project, I created a color detecting software. Coming up with this idea required a lot of brainstorming on my part. But after combining my love for skincare and technology, I came up with this idea.""")
          st.image(imge, width=None)
@@ -192,7 +192,7 @@ def main():
         """)
 
 	if choice== 'Detection':
-         imagg = Image.open('FSnm.jpg', "rb")
+         imagg = Image.open('FSnm.jpg')
          st.image(imagg, width=None)
          st.subheader("Skin and Color Detection")
          st.write("""  * Take the picture in front of a plain background (ideally a white background)""")
