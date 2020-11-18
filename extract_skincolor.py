@@ -192,7 +192,7 @@ def main():
         """)
 
 	if choice== 'Detection':
-         imagg = Image.open('/extract-dominant-skincolor/images/FSnm.png/')
+         imagg = Image.open('images', FSnm.png)
          st.image(imagg, width=None)
          st.subheader("Skin and Color Detection")
          st.write("""  * Take the picture in front of a plain background (ideally a white background)""")
