@@ -181,7 +181,7 @@ def main():
     
 	if choice== 'About Me':
          st.subheader("Welcome")
-         imge = Image.open('makeup.png')
+         imge = Image.open('/github/diditaks/extract-dominant-skincolor/blob/main/images/makeup.png')
 
          st.write("""Hello, my name is Adel Takawira and I am fifteen years old. I attend the international school of the hague, and for my personal project, I created a color detecting software. Coming up with this idea required a lot of brainstorming on my part. But after combining my love for skincare and technology, I came up with this idea.""")
          basewidth = 700
@@ -196,7 +196,7 @@ def main():
         """)
 
 	if choice== 'Detection':
-         imagg = Image.open('/Users/adeltakawira/Desktop/FSnm.jpg')
+         imagg = Image.open('/github/diditaks/extract-dominant-skincolor/blob/main/images/FSnm.jpg')
          basewidth = 700
          wpercent = (basewidth/float(imagg.size[0]))
          hsize = int((float(imagg.size[1])*float(wpercent)))
