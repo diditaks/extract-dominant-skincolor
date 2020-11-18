@@ -181,8 +181,7 @@ def main():
     
 	if choice== 'About Me':
          st.subheader("Welcome")
-         imge = Image.open('https://hips.hearstapps.com/cos.h-cdn.co/assets/15/50/4000x2000/landscape-1449787558-gettyimages-558947509.gif?resize=980:*')
-	 st.image(imge)
+	
          st.write("""Hello, my name is Adel Takawira and I am fifteen years old. I attend the international school of the hague, and for my personal project, I created a color detecting software. Coming up with this idea required a lot of brainstorming on my part. But after combining my love for skincare and technology, I came up with this idea.""")
          st.write("""Hello, my name is Adel Takawira and I am fifteen years old. I attend the international school of the hague, and for my personal project, I created a color detecting software. Coming up with this idea required a lot of brainstorming on my part. But after combining my love for skincare and technology, I came up with this idea.""")
          st.write("""Many people struggle to find a foundation or concealer that is an exact match to their skin tone, especially dark skinned people. For a long time they would have to resort to mixing two different shades in order get a color that was somewhat close to their natural tone. This is where I had the idea to create this software that detects, and extracts a person’s most dominant skin color, then displays it in a colorbar. This information can be used by cosmetic companies, to create a customized foundation/concealer that is suitable for their customers unique tone of skin. 
