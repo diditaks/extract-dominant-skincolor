@@ -180,6 +180,8 @@ def main():
 	choice = st.sidebar.selectbox("Menu",activities)
     
 	if choice== 'About Me':
+	 imge = Image.open('https://hips.hearstapps.com/cos.h-cdn.co/assets/15/50/4000x2000/landscape-1449787558-gettyimages-558947509.gif?resize=980:*')
+	 st.image(imge)
          st.subheader("Welcome")
          st.write("""Hello, my name is Adel Takawira and I am fifteen years old. I attend the international school of the hague, and for my personal project, I created a color detecting software. Coming up with this idea required a lot of brainstorming on my part. But after combining my love for skincare and technology, I came up with this idea.""")
          st.write("""Hello, my name is Adel Takawira and I am fifteen years old. I attend the international school of the hague, and for my personal project, I created a color detecting software. Coming up with this idea required a lot of brainstorming on my part. But after combining my love for skincare and technology, I came up with this idea.""")
