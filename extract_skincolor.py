@@ -181,10 +181,8 @@ def main():
     
 	if choice== 'About Me':
          st.subheader("Welcome")
-         imge = Image.open('makeup.png')
 
          st.write("""Hello, my name is Adel Takawira and I am fifteen years old. I attend the international school of the hague, and for my personal project, I created a color detecting software. Coming up with this idea required a lot of brainstorming on my part. But after combining my love for skincare and technology, I came up with this idea.""")
-         st.image(imge, width=None)
          st.write("""Many people struggle to find a foundation or concealer that is an exact match to their skin tone, especially dark skinned people. For a long time they would have to resort to mixing two different shades in order get a color that was somewhat close to their natural tone. This is where I had the idea to create this software that detects, and extracts a person’s most dominant skin color, then displays it in a colorbar. This information can be used by cosmetic companies, to create a customized foundation/concealer that is suitable for their customers unique tone of skin. 
         The great thing about this software is that it can be used, not only for cosmetic purposes, but also to customize ‘skin colored’ tights.""")
         
@@ -192,8 +190,6 @@ def main():
         """)
 
 	if choice== 'Detection':
-         imagg = Image.open('FSnm.png')
-         st.image(imagg, width=None)
          st.subheader("Skin and Color Detection")
          st.write("""  * Take the picture in front of a plain background (ideally a white background)""")
          ("""  * Try to fit only your face in the frame (exclude your clothes and jewelry etc)""")
