@@ -213,6 +213,7 @@ def main():
                    dominantColors = extractDominantColor(skin, hasThresholding=True)
                    color_bar = plotColorBar(dominantColors)
                    st.image(color_bar)
+		   st.image(skin)
                    
 
 if __name__ == '__main__':
