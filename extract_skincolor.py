@@ -13,7 +13,7 @@ from PIL import Image
 st.write("""
 # Find Your Dominant Skincolor 
 
-Have you struggled to find the right foundation and concealer because you don't know your exact skincolor? Or perhaps, you weren't able to find the right color tights to go with your unique skin tone?
+Have you struggled to find the right foundation and concealer because you don't know the dominant tones of your skin? Or perhaps, you weren't able to find the right color tights to go with your unique skin tone?
 
 """)
 
