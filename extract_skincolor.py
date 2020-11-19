@@ -203,17 +203,27 @@ def main():
             image = Image.open(image_file)
             st.text("Original Image")
             st.image(image)
-
+            #Converting Uploaded IOByte image into OpenCV Image
+            image1 = cv2.cvtColor(np.array(image),cv2.COLOR_BGR2RGB)
+                       
          task = ["Skin Color Bar"]
          feature_choice = st.sidebar.selectbox("Choose Features",task)
          if st.button("Process"):
 
             if feature_choice== "Skin Color Bar":
-                skin = extractSkin(image)
-                dominantColors = extractDominantColor(skin, hasThresholding=True)
-                color_bar = plotColorBar(dominantColors)
-                st.image(color_bar)
-
+                   skin = extractSkin(image1)
+                   dominantColors = extractDominantColor(skin, hasThresholding=True)
+                   color_bar = plotColorBar(dominantColors)
+                   st.text("Color Bar")
+                   st.image(color_bar)
+                   st.text("Thresholded Image")
+                   st.image(cv2.cvtColor(skin, cv2.COLOR_RGB2BGR))
+                   image2   = cv2.resize(image1,(500,500))
+                   #cv2.imshow("Converted OpenCV Image", image2)
+                   skin1   = cv2.resize(skin,(500,500))
+                  # cv2.imshow("StreamLIT Segmented Image", skin1)
+                   #cv2.waitKey()
+                   
 
 if __name__ == '__main__':
 	main()
