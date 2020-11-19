@@ -29,7 +29,7 @@ def extractSkin(image):
 
     # Defining HSV Threadholds
     lower = np.array([0, 48, 80], dtype=np.uint8)
-    upper = np.array([20, 124, 124], dtype=np.uint8)
+    upper = np.array([12, 255, 255], dtype=np.uint8)
 
     # Single Channel mask,denoting presence of colours in the about threshold
     skinMask = cv2.inRange(img, lower, upper)
@@ -125,7 +125,7 @@ def getColorInformation(estimator_labels, estimator_cluster, hasThresholding=Fal
     return colorInformation
 
 
-def extractDominantColor(image, number_of_colors=5, hasThresholding=False):
+def extractDominantColor(image, number_of_colors=3, hasThresholding=False):
 
     # Quick Fix Increase cluster counter to neglect the black(Read Article)
     if hasThresholding == True:
