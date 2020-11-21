@@ -191,7 +191,7 @@ def main():
 	if choice== 'Detection':
          st.subheader("Skin and Color Detection")
          st.write("""  * Take the picture in front of a plain background (ideally a white background)""")
-         ("""  * Try to fit only your face in the frame (exclude your clothes and jewelry etc)""")
+         ("""  * Try to fit only your face in the frame (exclude your clothes, hair and jewelry etc)""")
          ("""  * Use a fairly good quality photo (taken from your phone is fine)""")
          ("""  * Make sure there is enough lighting to see your face""")
 
