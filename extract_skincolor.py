@@ -194,7 +194,7 @@ def main():
          ("""  * Try to fit only your face in the frame (exclude your clothes, hair and jewelry etc)""")
          ("""  * Use a fairly good quality photo (taken from your phone is fine)""")
          ("""  * Make sure there is enough lighting to see your face""")
-	 ("""  * When you select your image file, wait until the image is visible before clicking the process button""")
+         ("""  * When you select your image file, wait until the image is visible before clicking the process button""")
 
          image_file = st.file_uploader("Upload Image",type=['jpg','png','jpeg'])
 
