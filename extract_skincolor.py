@@ -182,14 +182,14 @@ def main():
     
 	if choice== 'About Me':
          st.subheader("Welcome")
-         imge = Image.open('/Users/adeltakawira/Desktop/makeup.png',)
+         #imge = Image.open('/Users/adeltakawira/Desktop/makeup.png',)
 
          st.write("""Hello, my name is Adel Takawira and I am fifteen years old. I attend the international school of the hague, and for my personal project, I created a colour detecting software. Coming up with this idea required a lot of brainstorming on my part. But after combining my love for skincare and technology, I came up with this idea.""")
-         basewidth = 700
-         wpercent = (basewidth/float(imge.size[0]))
-         hsize = int((float(imge.size[1])*float(wpercent)))
-         imge = imge.resize((basewidth,hsize), Image.ANTIALIAS)
-         st.image(imge)
+         #basewidth = 700
+         #wpercent = (basewidth/float(imge.size[0]))
+         #hsize = int((float(imge.size[1])*float(wpercent)))
+         #imge = imge.resize((basewidth,hsize), Image.ANTIALIAS)
+         #st.image(imge)
          st.write("""Many people struggle to find a foundation or concealer that is an exact match to their skin tone, especially dark skinned people. For a long time they would have to resort to mixing two different shades in order get a colour that was somewhat close to their natural tone. This is where I had the idea to create this software that detects, and extracts a person’s most dominant skin colour, then displays it in a colourbar. This information can be used by cosmetic companies, to create a customized foundation/concealer that is suitable for their customers unique tone of skin. 
         The great thing about this software is that it can be used, not only for cosmetic purposes, but also to customize ‘skin coloured’ tights.""")
         
@@ -197,12 +197,12 @@ def main():
         """)
 
 	if choice== 'Detection':
-         imagg = Image.open('/Users/adeltakawira/Desktop/FSnm.jpg')
-         basewidth = 700
-         wpercent = (basewidth/float(imagg.size[0]))
-         hsize = int((float(imagg.size[1])*float(wpercent)))
-         imagg = imagg.resize((basewidth,hsize), Image.ANTIALIAS)
-         st.image(imagg)
+         #imagg = Image.open('/Users/adeltakawira/Desktop/FSnm.jpg')
+         #basewidth = 700
+         #wpercent = (basewidth/float(imagg.size[0]))
+         #hsize = int((float(imagg.size[1])*float(wpercent)))
+         #imagg = imagg.resize((basewidth,hsize), Image.ANTIALIAS)
+         #st.image(imagg)
          st.subheader("Skin and Colour Detection")
          st.write("""  * Take the picture in front of a plain background (ideally a white background)""")
          ("""  * Try to fit only your face in the frame (exclude your clothes, hair and jewelry etc)""")
