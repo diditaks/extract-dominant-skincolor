@@ -26,7 +26,7 @@ def detectSkin(image):
     # Converting from BGR Colours Space to HSV
     img = np.array(img)
     
-    img = cv2.cvtColour(img, cv2.COLOR_BGR2HSV)
+    img = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 
     # Defining HSV Threadholds
     lower = np.array([0, 48, 80], dtype=np.uint8)
@@ -43,7 +43,7 @@ def detectSkin(image):
     skin = cv2.bitwise_and(img, img, mask=skinMask)
 
     # Return the Skin image
-    return cv2.cvtColour(skin, cv2.COLOR_HSV2BGR)
+    return cv2.cvtColor(skin, cv2.COLOR_HSV2BGR)
 
 
 def removeBlack(estimator_labels, estimator_cluster):
@@ -136,7 +136,7 @@ def extractDominantTone(image, number_of_colours=3, hasThresholding=False):
     img = image.copy()
 
     # Convert Image into RGB Colours Space
-    img = cv2.cvtColour(img, cv2.COLOR_BGR2RGB)
+    img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
     # Reshape Image
     img = img.reshape((img.shape[0]*img.shape[1]), 3)
@@ -205,7 +205,7 @@ def main():
             st.text("Original Image")
             st.image(image)
             #Converting Uploaded IOByte image into OpenCV Image
-            image1 = cv2.cvtColour(np.array(image),cv2.COLOR_BGR2RGB)
+            image1 = cv2.cvtColor(np.array(image),cv2.COLOR_BGR2RGB)
                        
          task = ["Skin Colour Bar"]
          feature_choice = st.sidebar.selectbox("Choose Features",task)
